@@ -269,4 +269,45 @@ void enable4000Count() {
   Serial.println("Done");
   
 }
+/*
+ *  DTM0660 Memory Contents and Jumper settings as follows. 
+00H  -
+01H  J1A, J1BDCmV: 60.00mV/600.0mV 
+02H  J1A, J1BACmV: 60.00mV/600.0mV 
+03H  X,DCV (without mV): 6.000V/60.00V/600.0V/1000V 
+04H  X,ACV (without mV): 6.000V/60.00V/600.0V/750V 
+05H  X,DCVmV (with mV): 600.0mV/6.000V/60.00V/600.0V/1000V 
+06H  X,ACVmV (with mV): 600.0mV/6.000V/60.00V/600.0V/750V 
+07H  J1A, J1B,600.0Ω/6.000kΩ/60.00kΩ/600.0kΩ/6.000MΩ/60.00MΩ 
+08H  --
+09H  J1A, J1B,Cont 
+0AH  J1A, J1B,Diode 
+0BH  J1A, J1B,Cap: 9.999nF/99.99nF/999.9nF/9.999uF/99.99uF/999.9uF/9.999mF/99.99mF 
+0CH  J4(or J5),DCuA 600.0uA/6000uA ( DCA 600.0A/6000A) 
+0DH  J4(or J5),ACuA 60.00uA/600.0uA ( ACA 60.00A/600.0A) 
+0EH  J3(or J5),DCmA 60.00mA/600.0mA ( DCA 60.00A/600.0A) 
+0FH  J3(or J5),ACmA 60.00mA/600.0mA ( ACA 60.00A/600.0A) 
+10H  X(or J5),DCA 6.000A/60.00A ( DCA 6.000A/60.00A) 
+11H  X(or J5),ACA 6.000A/60.00A ( ACA 6.000A/60.00A) 
+12H  J1A and J2, J2 Hz/Duty 
+13H  J1A,Temp (°C) 
+14H  J6 HFE 
+15H  J1A,Temp (°F) 
+16H  J1A,DCA 6.000A 
+17H  J1A,ACA 6.000A 
+18H  J1A,DCA 60.00A 
+19H  J1A,ACA 60.00A 
+1AH  J1A,DCA 600.0A 
+1BH  J1A,ACA 600.0A 
+1CH  J1A,DCA 6000A 
+1DH  J1A,ACA 6000A 
+1EH  X,NCV
+ */
+
+
+void alterSwitch(int switchNumber) {
+ 
+
+}
+
 
